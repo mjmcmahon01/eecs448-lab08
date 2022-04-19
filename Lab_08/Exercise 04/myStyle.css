@@ -1,0 +1,24 @@
+head
+{
+    font-size: 120px;
+    text-align: center;
+}
+
+body
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+h
+{
+    font-size: 40px;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

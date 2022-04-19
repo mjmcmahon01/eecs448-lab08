@@ -1,0 +1,38 @@
+body
+{
+    background-color: #FFEBCD;
+    text-align : center;
+    font-size: 40px;
+    color: #696969;
+}
+
+h1
+{
+    font-size: 80px;
+    color: #696969;
+}
+
+h1.fancy
+{
+    font-size: 80px;
+    color: #353535;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+a
+{
+    font-size: 40px;
+    color: #696969;
+}
+
+a:hover 
+{
+    font-size: 40px;
+    color: #DC143C;
+}

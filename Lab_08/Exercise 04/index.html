@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link href="myStyle.css"
+        rel="stylesheet"
+        type="text/css"/>
+
+        Dummy text time <br><br><br><br>
+
+        <form>
+            <label for="border">Border (blue (b), red (r), green (g), width(5-20)):</label>
+            <input type="text" id="border" name="border">
+            <label for="bg_color">Background Color (blue (b), red (r), green (g)):</label>
+            <input type="text" id="bg_color" name="bg_color"><br> <br> <br> <br> <br>
+
+            <button type="button" onclick="func()">Click me!</button> 
+        </form> 
+    </head>
+    <body id = "body">
+        This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. 
+        This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. 
+        This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. 
+        This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. <br><br><br> 
+    </body>
+    <script>
+        var prevColor = "black";
+        var prevWidth = "5";
+        function func() {
+            var border = document.getElementById("border").value;
+            var bg = document.getElementById("bg_color").value;
+            if(border == "b") {
+                document.getElementById("body").style.border = prevWidth + "px solid blue";
+                prevColor = "blue";
+            }
+            else if(border == "r") {
+                document.getElementById("body").style.border = prevWidth + "px solid red";
+                prevColor = "red";
+            }
+            else if(border == "g") {
+                document.getElementById("body").style.border = prevWidth + "px solid green";
+                prevColor = "green";
+            }
+            else {
+                document.getElementById("body").style.border = border + "px solid " + prevColor;
+                prevWidth = border;
+            }         
+            if(bg == "b") {
+                document.getElementById("body").style.backgroundColor = "blue";
+            }
+            else if(bg == "r") {
+                document.getElementById("body").style.backgroundColor = "red";
+            }
+            else if(bg == "g") {
+                document.getElementById("body").style.backgroundColor = "green";
+            }
+        }
+    </script>
+</html>
